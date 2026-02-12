@@ -1,0 +1,19 @@
+
+1. Emitir tarjeta
+    POST /cards
+
+2. Activar tarjeta
+    POST /cards/{cardId}/actívate
+
+3. Bloquear tarjeta
+    POST /cards/{cardId}/block
+
+4. Consultar tarjeta
+    GET /cards/{cardId}
+
+Task -> Task recibe el POST o GET del usuario y lo transmite a TaskManager.
+
+TaskManager -> TaskManger recibe el POST o GET y realiza la logica necesaria.
+
+TaskRepository -> Acude a la base de datos para realizar la busqueda necesaria de informacion.
+
